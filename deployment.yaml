@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: node-api
+  name: node-js-api
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: node-api
+      app: node-js-api
   template:
     metadata:
       labels:
-        app: node-api
+        app: node-js-api
     spec:
       containers:
-      - name: node-api
-        image: node-api
-        imagePullPolicy: Never         # 👈 ADD THIS LINE
+      - name: node-js-api
+        image: graju9986/node-js-api:latest
         ports:
         - containerPort: 3000
+
