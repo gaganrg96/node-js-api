@@ -3,6 +3,7 @@ const app = express();
 
 app.get('/', (req, res) => {
     res.send('Hello from Dockerized Node.js API!');
+    res.send('Welcome Gagan to Node.js API');
 });
 
 app.listen(3000, () => {
