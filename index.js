@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 
 app.get('/', (req, res) => {
-    res.send('Welcome back Gagan to the Node.js Application API 2');
+    res.send('Welcome back Gagan to the Node.js Application API version 2');
 });
 
 app.listen(3000, () => {
