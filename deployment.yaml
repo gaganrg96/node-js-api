@@ -20,6 +20,7 @@ spec:
       containers:
       - name: node-js-api
         image: graju9986/node-js-api:latest
+        imagePullPolicy: Always
         ports:
         - containerPort: 3000
-      terminationGracePeriodSeconds: 30  
+      terminationGracePeriodSeconds: 30
